@@ -1,0 +1,443 @@
+<!doctype html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1l/DTD/transitional.dtd">
+<html xmlns="http://www.w3.org/TR/xhtml1">
+<head>
+<title>International Shipments</title>
+
+<style type="text/css">
+<!--  
+a:link {text-decoration: underline}
+a:active {text-decoration: underline}
+a:visited {text-decoration: underline}
+a:hover {color: "#990000"; font-weight:bold; text-decoration: none} 
+-->
+</style>
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+ 
+var supported = (window.Option) ? 1 : 0;
+ 
+if (supported) {
+  var active;
+  var ar = new Array();
+
+  ar[0] = new Array();
+  ar[0][0] = new makeOption("July", "jul2005/jul2005.htm")
+  ar[0][1] = new makeOption("June", "jun2005/jun2005.htm")
+  ar[0][2] = new makeOption("May", "may2005/may2005.htm")
+  ar[0][3] = new makeOption("April", "apr2005/apr2005.htm")
+  ar[0][4] = new makeOption("March", "mar2005/mar2005.htm")
+  ar[0][5] = new makeOption("February", "feb2005/feb2005.htm")
+  ar[0][6] = new makeOption("January", "jan2005/jan2005.htm")
+
+  ar[1] = new Array();
+  ar[1][0] = new makeOption("December", "dec2004/dec2004.htm")
+  ar[1][1] = new makeOption("November", "nov2004/nov2004.htm")
+  ar[1][2] = new makeOption("October", "oct2004/oct2004.htm")
+  ar[1][3] = new makeOption("September", "sep2004/sep2004.htm")
+  ar[1][4] = new makeOption("August", "aug2004/aug2004.htm")
+  ar[1][5] = new makeOption("July", "jul2004/jul2004.htm")
+  ar[1][6] = new makeOption("June", "jun2004/jun2004.htm")
+  ar[1][7] = new makeOption("May", "may2004/may2004.htm")
+  ar[1][8] = new makeOption("April", "apr2004/apr2004.htm")
+  ar[1][9] = new makeOption("March", "mar2004/mar2004.htm")
+  ar[1][10] = new makeOption("February", "feb2004/feb2004.htm")
+  ar[1][11] = new makeOption("January", "jan2004/jan2004.htm")
+
+  ar[2] = new Array();
+  ar[2][0] = new makeOption("December", "2003/dec2003/dec2003.htm")
+  ar[2][1] = new makeOption("November", "2003/nov2003/nov2003.htm")
+  ar[2][2] = new makeOption("October", "2003/oct2003/oct2003.htm")
+  ar[2][3] = new makeOption("September", "2003/sep2003/sep2003.htm")
+  ar[2][4] = new makeOption("August", "2003/aug2003/aug2003.htm")
+  ar[2][5] = new makeOption("July", "2003/jul2003/jul2003.htm")
+  ar[2][6] = new makeOption("June", "2003/jun2003/jun2003.htm")
+  ar[2][7] = new makeOption("May", "2003/may2003/may2003.htm")
+  ar[2][8] = new makeOption("April", "2003/apr2003/apr2003.htm")
+  ar[2][9] = new makeOption("March", "2003/mar2003/mar2003.htm")
+  ar[2][10] = new makeOption("February", "2003/feb2003/feb2003.htm")
+  ar[2][11] = new makeOption("January", "2003/jan2003/jan2003.htm")
+
+  ar[3] = new Array();
+  ar[3][0] = new makeOption("December", "2002/dec2002/dec2002.htm")
+  ar[3][1] = new makeOption("November", "2002/nov2002/nov2002.htm")
+  ar[3][2] = new makeOption("October", "2002/oct2002/oct2002.htm")
+  ar[3][3] = new makeOption("September", "2002/sep2002/sep2002.htm")
+  ar[3][4] = new makeOption("August", "2002/aug2002/aug2002.htm")
+  ar[3][5] = new makeOption("July", "2002/jul2002/jul2002.htm");
+  ar[3][6] = new makeOption("June", "2002/jun2002/jun2002.htm");
+  ar[3][7] = new makeOption("May", "2002/may2002/may2002.htm");
+  ar[3][8] = new makeOption("April", "2002/apr2002/apr2002.htm");
+  ar[3][9] = new makeOption("March", "2002/mar2002/mar2002.htm");
+  ar[3][10] = new makeOption("February", "2002/feb2002/feb2002.htm");
+  ar[3][11] = new makeOption("January", "2002/jan2002/jan2002.htm");
+ 
+  ar[4] = new Array();
+  ar[4][0] = new makeOption("December", "2001/dec2001/dec2001.htm");
+  ar[4][1] = new makeOption("November", "2001/nov2001/nov2001.htm");
+  ar[4][2] = new makeOption("October", "2001/oct2001/oct2001.htm");
+  ar[4][3] = new makeOption("September", "2001/sep2001/sep2001.htm");
+  ar[4][4] = new makeOption("August", "2001/aug2001/aug2001.htm");
+  ar[4][5] = new makeOption("July", "2001/jul2001/jul2001.htm");
+  ar[4][6] = new makeOption("June", "2001/jun2001/jun2001.htm");
+  ar[4][7] = new makeOption("May", "2001/may2001/may2001.htm");
+  ar[4][8] = new makeOption("April", "2001/apr2001/apr2001.htm");
+  ar[4][9] = new makeOption("March", "2001/mar2001/mar2001.htm");
+  ar[4][10] = new makeOption("February", "2001/feb2001/feb2001.htm");
+  ar[4][11] = new makeOption("January", "2001/jan2001/jan2001.htm");
+
+  ar[5] = new Array();
+  ar[5][0] = new makeOption("December", "2000/dec2000/dec2000.htm");
+  ar[5][1] = new makeOption("November", "2000/nov2000/nov2000.htm");
+  ar[5][2] = new makeOption("October", "2000/oct2000/oct2000.htm");
+  ar[5][3] = new makeOption("September", "2000/sep2000/sep2000.htm");
+  ar[5][4] = new makeOption("August", "2000/aug2000/aug2000.htm");
+  ar[5][5] = new makeOption("July", "2000/jul2000/jul2000.htm");
+  ar[5][6] = new makeOption("June", "2000/jun2000/jun2000.htm");
+  ar[5][7] = new makeOption("May", "2000/may2000/may2000.htm");
+  ar[5][8] = new makeOption("April", "2000/apr2000/apr2000.htm");
+  ar[5][9] = new makeOption("March", "2000/mar2000/mar2000.htm");
+  ar[5][10] = new makeOption("February", "2000/feb2000/feb2000.htm");
+  ar[5][11] = new makeOption("January", "2000/jan2000/jan2000.htm");
+ 
+  ar[6] = new Array();
+  ar[6][0] = new makeOption("December", "1999/dec1999/dec1999.htm");
+  ar[6][1] = new makeOption("November", "1999/nov1999/nov1999.htm");
+  ar[6][2] = new makeOption("October", "1999/oct1999/oct1999.htm");
+  ar[6][3] = new makeOption("September", "1999/sep1999/sep1999.htm");
+  ar[6][4] = new makeOption("August", "1999/aug1999/aug1999.htm");
+  ar[6][5] = new makeOption("July", "1999/jul1999/jul1999.htm");
+  ar[6][6] = new makeOption("June", "1999/jun1999/jun1999.htm");
+  ar[6][7] = new makeOption("May", "1999/may1999/may1999.htm");
+  ar[6][8] = new makeOption("April", "1999/apr1999/apr1999.htm");
+  ar[6][9] = new makeOption("March", "1999/mar1999/mar1999.htm");
+  ar[6][10] = new makeOption("February", "1999/feb1999/feb1999.htm");
+}
+ 
+function makeOption(text, url) {
+  this.text = text;
+  this.url = url;
+}
+ 
+function relate(form) {
+  if (!supported) {
+    load(form, "topics");
+    return;
+  }
+  var options = form.list.options;
+  for (var i = options.length - 1; i > 0; i--) {
+    options[i] = null;
+  }
+  var curAr = ar[form.topics.selectedIndex];
+  for (var j = 0; j < curAr.length; j++) {
+    options[j] = new Option(curAr[j].text, curAr[j].url);
+  }
+  options[0].selected = true;
+}
+ 
+function load(form, name) {
+  var url = form[name].options[form[name].selectedIndex].value;
+  if (url != "") location.href = url;
+  return false;
+}
+ 
+// -->
+</SCRIPT>
+
+
+</head>
+<body STYLE="font-family: arial, sans-serif">
+
+
+<br>
+<h3>Click on highlighted date to see shipment details and download Commercial Invoices for that day.</h3>
+
+<hr>
+<br>
+
+<TABLE ALIGN=LEFT BORDER=4 CELLPADDING=5 CELLSPACING=1 WIDTH=400>
+<CAPTION>OCTOBER 2005</CAPTION>
+<TR BGCOLOR="000000" ALIGN="center">
+	
+	<TH height=35 WIDTH=45><font color="#FFFFFF">Mon</font></TH>
+	<TH WIDTH=45><font color="#FFFFFF">Tue</font></TH>
+	<TH WIDTH=45><font color="#FFFFFF">Wed</font></TH>
+	<TH WIDTH=45><font color="#FFFFFF">Thu</font></TH>
+	<TH WIDTH=45><font color="#FFFFFF">Fri</font></TH>
+	<TH WIDTH=45><font color="#FFFFFF">Sat</font></TH>
+	<TH WIDTH=45><font color="#FFFFFF">Sun</font></TH>
+</TR>
+
+<TR BGCOLOR="#B87878" ALIGN="center">
+	
+	<TD height=35 BGCOLOR="#ffffff">&nbsp;</TD>
+	<TD BGCOLOR="#ffffff">&nbsp;</TD>
+	<TD BGCOLOR="#ffffff">&nbsp;</TD>
+	<TD BGCOLOR="#ffffff">&nbsp;</TD>
+	<TD BGCOLOR="#ffffff">&nbsp;</TD>
+	<TD BGCOLOR="#cccccc">1</TD>
+	<TD BGCOLOR="#cccccc">2</TD>
+
+</TR>
+
+<TR BGCOLOR="#889C78" ALIGN="center">
+	
+	<TD height=35><a href="oct2005/oct005.htm#oct03">3</a></TD>
+	<TD><a href="oct2005/oct005.htm#oct04">4</a></TD>
+	<TD><a href="oct2005/oct005.htm#oct05">5</a></TD>
+	<TD><a href="oct2005/oct005.htm#oct06">6</a></TD>
+	<TD><a href="oct2005/oct005.htm#oct07">7</a></TD>
+	<TD BGCOLOR="#cccccc">8</TD>
+	<TD BGCOLOR="#cccccc">9</TD>
+
+</TR>
+
+<TR BGCOLOR="#B0A888" ALIGN="center">
+
+      <TD height=35 BGCOLOR="#cccccc">10</TD>
+	<TD><a href="oct2005/oct005.htm#oct11">11</a></TD>
+	<TD><a href="oct2005/oct005.htm#oct12">12</a></TD>
+	<TD><a href="oct2005/oct005.htm#oct13">13</a></TD>
+	<TD><a href="oct2005/oct005.htm#oct14">14</a></TD>
+	<TD BGCOLOR="#cccccc">15</TD>
+	<TD BGCOLOR="#cccccc">16</TD>
+
+</TR>
+
+<TR BGCOLOR="#787CB8" ALIGN="center">
+	
+	<TD height=35><a href="oct2005/oct005.htm#oct17">17</a></TD>
+	<TD><a href="oct2005/oct005.htm#oct18">18</a></TD>
+	<TD><a href="oct2005/oct005.htm#oct19">19</a></TD>
+	<TD><a href="oct2005/oct005.htm#oct20">20</a></TD>
+	<TD><a href="oct2005/oct005.htm#oct21">21</a></TD>
+	<TD BGCOLOR="#cccccc">22</TD>
+	<TD BGCOLOR="#cccccc">23</TD>
+
+</TR>
+
+<TR BGCOLOR="#B87878" ALIGN="center">
+	
+	<TD height=35><a href="oct2005/oct005.htm#oct24">24</a></TD>
+	<TD><a href="oct2005/oct005.htm#oct25">25</a></TD>
+	<TD><a href="oct2005/oct005.htm#oct26">26</a></TD>
+	<TD><a href="oct2005/oct005.htm#oct27">27</a></TD>
+	<TD><a href="oct2005/oct005.htm#oct28">28</a></TD>
+	<TD BGCOLOR="#cccccc">29</TD>
+	<TD BGCOLOR="#cccccc">30</TD>
+
+</TR>
+
+<TR BGCOLOR="#889C78" ALIGN="center">
+	
+	<TD height=35><a href="oct2005/oct005.htm#oct31">31</a></TD>
+	<TD BGCOLOR="#ffffff">&nbsp;</TD>
+	<TD BGCOLOR="#ffffff">&nbsp;</TD>
+	<TD BGCOLOR="#ffffff">&nbsp;</TD>
+	<TD BGCOLOR="#ffffff">&nbsp;</TD>
+	<TD BGCOLOR="#ffffff">&nbsp;</TD>
+	<TD BGCOLOR="#ffffff">&nbsp;</TD>
+
+</TR>
+
+</TABLE>
+<BR><BR><BR><BR><BR><BR><br><br><br>
+<CENTER><P>Or click here to<BR><A HREF="oct2005/oct005.htm">browse entire month of 
+October</A></CENTER>
+<BR CLEAR=left>
+<br><br>
+
+<TABLE ALIGN=LEFT BORDER=4 CELLPADDING=5 CELLSPACING=1 WIDTH=400>
+<CAPTION>SEPTEMBER 2005</CAPTION>
+<TR BGCOLOR="000000" ALIGN="center">
+	
+	<TH height=35 WIDTH=45><font color="#FFFFFF">Mon</font></TH>
+	<TH WIDTH=45><font color="#FFFFFF">Tue</font></TH>
+	<TH WIDTH=45><font color="#FFFFFF">Wed</font></TH>
+	<TH WIDTH=45><font color="#FFFFFF">Thu</font></TH>
+	<TH WIDTH=45><font color="#FFFFFF">Fri</font></TH>
+	<TH WIDTH=45><font color="#FFFFFF">Sat</font></TH>
+	<TH WIDTH=45><font color="#FFFFFF">Sun</font></TH>
+</TR>
+
+<TR BGCOLOR="#B87878" ALIGN="center">
+	
+	<TD height=35 BGCOLOR="#ffffff">&nbsp;</TD>
+	<TD BGCOLOR="#ffffff">&nbsp;</TD>
+	<TD BGCOLOR="#ffffff">&nbsp;</TD>
+	<TD><a href="sep2005/sep005.htm#sep01">1</a></TD>
+	<TD><a href="sep2005/sep005.htm#sep02">2</a></TD>
+	<TD BGCOLOR="#cccccc">3</TD>
+	<TD BGCOLOR="#cccccc">4</TD>
+
+</TR>
+
+<TR BGCOLOR="#889C78" ALIGN="center">
+	
+	<TD height=35 BGCOLOR="#cccccc">5</TD>
+	<TD><a href="sep2005/sep005.htm#sep06">6</a></TD>
+	<TD><a href="sep2005/sep005.htm#sep07">7</a></TD>
+	<TD><a href="sep2005/sep005.htm#sep08">8</a></TD>
+	<TD><a href="sep2005/sep005.htm#sep09">9</a></TD>
+	<TD BGCOLOR="#cccccc">10</TD>
+	<TD BGCOLOR="#cccccc">11</TD>
+
+</TR>
+
+<TR BGCOLOR="#B0A888" ALIGN="center">
+
+      <TD height=35><a href="sep2005/sep005.htm#sep12">12</a></TD>
+	<TD><a href="sep2005/sep005.htm#sep13">13</a></TD>
+	<TD><a href="sep2005/sep005.htm#sep14">14</a></TD>
+	<TD><a href="sep2005/sep005.htm#sep15">15</a></TD>
+	<TD><a href="sep2005/sep005.htm#sep16">16</a></TD>
+	<TD BGCOLOR="#cccccc">17</TD>
+	<TD BGCOLOR="#cccccc">18</TD>
+
+</TR>
+
+<TR BGCOLOR="#787CB8" ALIGN="center">
+	
+	<TD height=35><a href="sep2005/sep005.htm#sep19">19</a></TD>
+	<TD><a href="sep2005/sep005.htm#sep20">20</a></TD>
+	<TD><a href="sep2005/sep005.htm#sep21">21</a></TD>
+	<TD><a href="sep2005/sep005.htm#sep22">22</a></TD>
+	<TD><a href="sep2005/sep005.htm#sep23">23</a></TD>
+	<TD BGCOLOR="#cccccc">24</TD>
+	<TD BGCOLOR="#cccccc">25</TD>
+
+</TR>
+
+<TR BGCOLOR="#B87878" ALIGN="center">
+	
+	<TD height=35><a href="sep2005/sep005.htm#sep26">26</a></TD>
+	<TD><a href="sep2005/sep005.htm#sep27">27</a></TD>
+	<TD><a href="sep2005/sep005.htm#sep28">28</a></TD>
+	<TD><a href="sep2005/sep005.htm#sep29">29</a></TD>
+	<TD><a href="sep2005/sep005.htm#sep30">30</a></TD>
+	<TD BGCOLOR="#ffffff">&nbsp;</TD>
+	<TD BGCOLOR="#ffffff">&nbsp;</TD>
+
+</TR>
+
+</TABLE>
+<BR><BR><BR><BR><BR><BR><br><br>
+<CENTER><P>Or click here to<BR><A HREF="sep2005/sep005.htm">browse entire month of 
+September</A></CENTER>
+<BR CLEAR=left>
+<br><br>
+
+<TABLE ALIGN=LEFT BORDER=4 CELLPADDING=5 CELLSPACING=1 WIDTH=400>
+<CAPTION>AUGUST 2005</CAPTION>
+<TR BGCOLOR="000000" ALIGN="center">
+	
+	<TH height=35 WIDTH=45><font color="#FFFFFF">Mon</font></TH>
+	<TH WIDTH=45><font color="#FFFFFF">Tue</font></TH>
+	<TH WIDTH=45><font color="#FFFFFF">Wed</font></TH>
+	<TH WIDTH=45><font color="#FFFFFF">Thu</font></TH>
+	<TH WIDTH=45><font color="#FFFFFF">Fri</font></TH>
+	<TH WIDTH=45><font color="#FFFFFF">Sat</font></TH>
+	<TH WIDTH=45><font color="#FFFFFF">Sun</font></TH>
+</TR>
+
+<TR BGCOLOR="#B87878" ALIGN="center">
+	
+	<TD height=35><a href="aug2005/aug005.htm#aug01">1</a></TD>
+	<TD><a href="aug2005/aug005.htm#aug02">2</a></TD>
+	<TD><a href="aug2005/aug005.htm#aug03">3</a></TD>
+	<TD><a href="aug2005/aug005.htm#aug04">4</a></TD>
+	<TD><a href="aug2005/aug005.htm#aug05">5</a></TD>
+	<TD BGCOLOR="#cccccc">6</TD>
+	<TD BGCOLOR="#cccccc">7</TD>
+
+</TR>
+
+<TR BGCOLOR="#889C78" ALIGN="center">
+	
+	<TD height=35><a href="aug2005/aug005.htm#aug08">8</a></TD>
+	<TD><a href="aug2005/aug005.htm#aug09">9</a></TD>
+	<TD><a href="aug2005/aug005.htm#aug10">10</a></TD>
+	<TD><a href="aug2005/aug005.htm#aug11">11</a></TD>
+	<TD><a href="aug2005/aug005.htm#aug12">12</a></TD>
+	<TD BGCOLOR="#cccccc">13</TD>
+	<TD BGCOLOR="#cccccc">14</TD>
+
+</TR>
+
+<TR BGCOLOR="#B0A888" ALIGN="center">
+	
+	<TD height=35><a href="aug2005/aug005.htm#aug15">15</a></TD>
+	<TD><a href="aug2005/aug005.htm#aug16">16</a></TD>
+	<TD><a href="aug2005/aug005.htm#aug17">17</a></TD>
+	<TD><a href="aug2005/aug005.htm#aug18">18</a></TD>
+	<TD><a href="aug2005/aug005.htm#aug19">19</a></TD>
+	<TD BGCOLOR="#cccccc">20</TD>
+	<TD BGCOLOR="#cccccc">21</TD>
+
+</TR>
+
+<TR BGCOLOR="#787CB8" ALIGN="center">
+	
+	<TD height=35><a href="aug2005/aug005.htm#aug22">22</a></TD>
+	<TD><a href="aug2005/aug005.htm#aug23">23</a></TD>
+	<TD><a href="aug2005/aug005.htm#aug24">24</a></TD>
+	<TD><a href="aug2005/aug005.htm#aug25">25</a></TD>
+	<TD><a href="aug2005/aug005.htm#aug26">26</a></TD>
+	<TD BGCOLOR="#cccccc">27</TD>
+	<TD BGCOLOR="#cccccc">28</TD>
+
+</TR>
+
+<TR BGCOLOR="#B87878" ALIGN="center">
+	
+	<TD height=35><a href="aug2005/aug005.htm#aug29">29</a></TD>
+	<TD><a href="aug2005/aug005.htm#aug30">30</a></TD>
+	<TD><a href="aug2005/aug005.htm#aug31">31</a></TD>
+	<TD BGCOLOR="#ffffff">&nbsp;</TD>
+	<TD BGCOLOR="#ffffff">&nbsp;</TD>
+	<TD BGCOLOR="#ffffff">&nbsp;</TD>
+	<TD BGCOLOR="#ffffff">&nbsp;</TD>
+
+</TR>
+
+</TABLE>
+<BR><BR><BR><BR><BR><BR><br><br>
+<CENTER><P>Or click here to<BR><A HREF="aug2005/aug005.htm">browse entire month of 
+August</A></CENTER>
+<BR CLEAR=left>
+<br><br><br>
+
+
+For archived shipment data, select <b>year</b> and <b>month</b> below and click <b>Go</b>:
+<FORM NAME="menu" onSubmit="return load(this, active)">
+ 
+<SELECT NAME="topics" onChange="relate(this.form)">
+<OPTION VALUE="" SELECTED>2005
+<OPTION VALUE="">2004
+<OPTION VALUE="">2003
+<OPTION VALUE="">2002
+<OPTION VALUE="">2001
+<OPTION VALUE="">2000
+<OPTION VALUE="">1999
+</SELECT>
+ 
+<SELECT NAME="list">
+<OPTION VALUE="jul2005/jul2005.htm" SELECTED>July
+<OPTION VALUE="jun2005/jun2005.htm">June
+<OPTION VALUE="may2005/may2005.htm">May
+<OPTION VALUE="apr2005/apr2005.htm">April
+<OPTION VALUE="mar2005/mar2005.htm">March
+<OPTION VALUE="feb2005/feb2005.htm">February
+<OPTION VALUE="jan2005/jan2005.htm">January
+</SELECT>
+<INPUT TYPE="submit" NAME="child" VALUE="Go" onClick="active='list'">
+ 
+</FORM>
+
+<SMALL>(Note: Shipment details prior to February 1999 are not available on the AspectNet.<br>If details prior to February are required, please <a href="mailto:lee.kifer@aspect.com"><nobr>e-mail</nobr></a> me.)</SMALL>
+<br>
+<br>
+
+
+</body>
+</html>
