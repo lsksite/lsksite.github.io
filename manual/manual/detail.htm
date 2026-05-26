@@ -1,0 +1,92 @@
+<HTML>
+<HEAD>
+<TITLE>Instructions for DETAIL screen</TITLE>
+</HEAD>
+<BODY BGCOLOR=WHITE>
+<CENTER>
+<IMG SRC="detail04.gif">
+</CENTER>
+<H1>The Detail screen contains the data for the main body of the invoice.</H1>
+<HR>
+<H2>Completing the Detail screen.</H2>
+<P>(A Header must be created before starting the Details screen. Please
+be sure to review <A HREF="header.htm">HEADER</A> before continuing with this page.)</P>
+<P>The example we are working with is an invoice for a shipment to one of our subsidiaries against
+an Oracle sales order. After completing the items discussed in the Header section it will then
+be necessary to download the order details from Oracle.</P>
+<P>With the Header window saved and still visible, click on the download button
+<IMG SRC="hp.gif"align=top>. This will bring up the Download Parameters box:
+<p><CENTER><A NAME="DP"><IMG SRC="dwnld02.gif"align=middle hspace=20></A><B><TT>DOWNLOAD PARAMETERS dialog box</TT></B></CENTER></P>
+<P>Click on <strong>Orders</strong>, then <strong>OK</strong>. This will
+start the download process from Oracle to the IIG database. (Remember, the key field in the Header to enable the correct data to be downloaded is the 
+<A HREF="header.htm#Ref">Reference</A> field). The Detail window will appear (see top of page) 
+with data downloaded to the following fields: <strong>Line#, Model#, Description, Qty, Unit Cost,
+Unit Price</strong> and <strong>Tariff Item#.</strong> (Note that data downloaded into the <strong>Tariff Item#</strong> field
+and the <strong>Unit Cost</strong> field may not always be complete. This data does not come directly from the Oracle Sales Order but from
+fields in Oracle that are linked to the Model Code so these fields need to be reviewed
+for completeness and accuracy). All data fields in the Detail window can be altered manually and, in the
+case of <strong>Tariff Item#</strong>, with the drop-down menu. Note that fields with blue backgrounds
+(<strong>Ext Cost x Tran Rate</strong>, <strong>Ext Price</strong> and their associated totals) are calculated fields and cannot
+be updated directly.</P>
+<P>
+<EM>
+<A NAME="DP2">(Note:</a> There are certain software and hardware model codes that have been designated to ship separately from the main shipment. If the IIG recognizes these model codes it will bring up a prompt to ask if a separate invoice should be started for these models. Click here for further details of <A HREF="split.htm">Invoice Split</A> prompt.)
+</EM>
+</P>
+<P>The <strong>Software Transer Rate</strong> <IMG SRC="sw_tr.gif" ALIGN=ABSMIDDLE>, <strong>Redundant Factor</strong> <IMG SRC="red_fctr.gif" ALIGN=ABSMIDDLE>,
+ <strong>Hardware Transfer Rate</strong> <IMG SRC="hw_tr.gif" ALIGN=ABSMIDDLE>
+ and <strong>Quantity</strong> <IMG SRC="qty.gif" ALIGN=ABSMIDDLE> fields all act on the <strong>Unit Cost</strong> <IMG SRC="unit_cst.gif" ALIGN=ABSMIDDLE> field to affect the total for that line on the invoice. However, the <strong>Unit Price</strong>
+ <IMG SRC="unit_pr.gif" ALIGN=ABSMIDDLE> field is only affected by the <strong>Qty</strong> field.</P>
+<P>It's very important to understand the difference between <strong>Unit Cost</strong> and <strong>
+Unit Price</strong>. As was briefly mentioned in the Header tutorial, the selection of the country
+from the <A HREF="header.htm#Cntry">drop-down country list</A> has a direct impact on the pricing on the invoice.
+When we ship product to our subsidiaries we currently use standard cost times whatever transfer
+rate has been established. When we ship to an end-user (distributor) we use the sales price
+that OA has entered for that particular sales order. Currently, the way the Generator determines
+what pricing scheme to use is by the <strong>Country Code</strong> that was entered in the Header.
+When a particular country is intitially setup in the Generator (and a <strong>Country Code</strong> established)
+it must be determined at that point whether to use <strong>Unit Cost</strong> or <strong>Unit Price</strong> for shipments to that
+country. In situations where shipments are possible, within the same country, to our subsidiary or
+to an end-user it is necessary to setup <strong>two separate country codes</strong>: one for <strong>Unit Cost</strong>
+(transer price) and one for <strong>Unit Price</strong>.</P>
+<P>It's extremely important to recognize how the Generator distinguishes between these two
+pricing schemes. The final invoice will be wildly wrong if the incorrect pricing was used. The figure below indicates the different invoice totals that would be used depending on whether the above Detail window was setup for <strong>Unit Cost</strong> or <strong>Unit Price</strong>
+</P>
+<P><center><IMG SRC="total.gif"></center></P>
+<P>(Note that if the invoice has been setup to use <strong>Unit Price</strong> there will
+still be amounts indicated in the fields for <STRONG>SW TR Rate</STRONG>, <STRONG>Redndt Factor</STRONG> and <STRONG>HW TR Rate</STRONG>, but these fields will be <strong>ignored</strong> in the final
+output on the Invoice. These fields are only used if invoice is setup for <STRONG>Unit Cost</STRONG>.)
+</P>
+<P>It's a good idea to save the Detail screen immediately after downloading and after any changes are made.
+If there are any backorders, the <strong>Qty</strong> field can be changed or the whole line can be deleted
+whichever is appropriate. To delete a line make sure any field in that line is highlighted then
+click on the Trash Can button <IMG SRC="trash.gif"align=top>. (If a line is deleted by mistake it can be retrieved by clicking on the un-delete button <IMG ALIGN=ABSMIDDLE SRC="undlt.gif">. This optin only works, however, if the detail window wasn't saved after deleting the wrong line.)
+</P>
+<P>If a line needs to be added to an invoice click on the Add New Line button <IMG SRC="insert.gif"align=top>.
+This will create a new line in the Detail window where data can be entered manually. Alternatively, if additional
+items need to be added to an invoice they can be downloaded separately by using the <strong>Item Master</strong>
+option in the <A HREF="#DP">Download Parameters</A> dialog box. Click on the Download button <IMG SRC="hp.gif"align=top>
+then click on the Item Master option in the Download Parameters box. Another box will appear where the additional
+item(s) can be entered. Click OK and the new item(s) along with their Unit Cost and Description will be added to the Detail window.
+The Qty for these additional items will then need to be entered manually. Be sure to SAVE after any changes are made.</P>
+<P>Note that when the <strong>Item Master</strong> option is used for downloading it will always <strong>add</strong> to what has
+already been entered in the Detail screen. When the <strong>Orders</strong> option is used it will always <strong>overwrite</strong>
+what was previously downloaded. Also it's important to note that when the <strong>Orders</strong> option is used it will also
+enter data to the Header screen as was explained earlier in the <A HREF="header.htm#Oracle">Header tutorial</A>. If this data
+was previously entered manually to the Header screen Oracle will overwrite it. To maintain the data that was entered
+manually make sure not to save the Header window after the Oracle order is downloaded. This is done by not clicking on save
+when the Header screen is ACTIVE. Data can be saved many times while the Detail screen is active without affecting
+the Header, but if the Header screen is saved after an Oracle order download then the manually entered data will be permanently overwritten.</P>
+<P>After all the necessary items have been downloaded and the Detail window reviewed for accuracy (and Saved!) it is time to
+proceed to the final element of the invoice: The <A HREF="footer.htm">Footer</A> window.</P>
+<P>Go to <A HREF="footer.htm">FOOTER</A></P>
+<P><CENTER>( <A HREF="home.htm">HOME</A> | <A HREF="header.htm">HEADER</A> | <A HREF="detail.htm">DETAIL</A> | <A HREF="footer.htm">FOOTER</A> | <A HREF="print.htm">PRINT</A> ).
+</CENTER>
+</P>
+<HR>
+<address>
+Last Updated: 2/14/98 by Lee Kifer
+</address>
+</BODY>
+</HTML>
+

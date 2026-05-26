@@ -1,0 +1,272 @@
+<HTML>
+<HEAD>
+<TITLE>Monthly Updates to Int'l Shipments Web Site</TITLE>
+
+<style type="text/css">
+<!--
+body {font-family: arial, sans-serif}
+a:link {text-decoration: none}
+a:active {text-decoration: none}
+a:visited {text-decoration: none}
+a:hover {color: "#990000"; text-decoration: = underline}
+-->
+</style>
+
+
+
+</HEAD>
+<BODY>
+
+<H1><A NAME="Top">Monthly Updates to Int'l Shipments Web Site</A></H1>
+
+<H2>Contents</H2>
+<OL>
+  <LI><A HREF="#A1">Introduction</A>
+  <LI><A HREF="#A2">Archive old month</A>
+  <LI><A HREF="#A3">Update links in daily files</A>
+  <LI><A HREF="#A4">Create new files and folders for new month</A>
+  <LI><A HREF="#A5">Update links in previous month</A>
+  <LI><A HREF="#A6">Update main page ("index.htm")</A>
+</OL>
+<P>
+<HR>
+
+<H2><A NAME="A1">1. Introduction</A></H2>
+This document itemizes the procedure for making necessary changes to International Shipments web site when changing from one month to another.
+<P>
+Necessary changes include archiving second to last month (the two most recent months are always current on the main page) updating links, creating files and folders for new month, and updating main (&quot;index.htm&quot;) page.
+<P>
+<B>[ <A HREF="#Top">Top of Page</A> ]</B>
+
+
+<H2><A NAME="A2">2. Archive old month</A></H2>
+<h4>Create file for newly archived month (if new month is July then newly archived month will be May).</h4>
+
+<OL>
+
+<LI>Copy previous archived month (in this example, &quot;apr2000.htm&quot;) from its folder (apr2000) into folder to be archived (may2000) then rename file &quot;may2000.htm&quot;.
+
+
+<BR><BR>
+<LI>OPEN &quot;index.htm&quot; in NoteTab Light and COPY the month of May.
+<br><BR>
+COPY everything from:
+<br><BR>
+<FONT COLOR="#008000"><TT>&lt;TABLE ALIGN=LEFT BORDER=5 CELLPADDING=5 CELLSPACING=2 WIDTH=400&gt;<BR>
+&lt;CAPTION&gt;MAY 2000&lt;/CAPTION&gt;</TT></FONT>
+<br><BR>
+to:
+<br><br>
+<FONT COLOR="#008000"><TT>&lt;BR CLEAR=left&gt;</TT></FONT>
+<br><br>
+
+<LI>OPEN &quot;may2000.htm&quot; and PASTE the month of May over the month of April in &quot;may2000.htm&quot;
+<br><br>
+PASTE over everything from:
+<br><br>
+<FONT COLOR="#008000"><TT>&lt;TABLE ALIGN=LEFT BORDER=5 CELLPADDING=5 CELLSPACING=2 WIDTH=400&gt;<BR>
+&lt;CAPTION&gt;April 2000&lt;/CAPTION&gt;</TT></FONT>
+<br><br>
+to:
+<br><br>
+<FONT COLOR="#008000"><TT>&lt;BR CLEAR=left&gt;</TT></FONT>
+<br><br>
+
+<LI>With &quot;may2000.htm&quot; still open use &quot;Find and Replace&quot; to change all instances of :
+<br><br>
+<FONT COLOR="#008000"><TT>&lt;a href=&quot;may2000/mayxx.htm&quot;&gt;</TT></FONT>
+<br><br>
+to:
+<br><br>
+<FONT COLOR="#008000"><TT>&lt;a href=&quot;mayxx.htm&quot;&gt;</TT></FONT>
+<br><br>
+(Note: &quot;xx&quot; equals day of the week)
+<br><br>
+Example:
+<br><br>
+FIND WHAT:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;may2000/may<BR>
+REPLACE WITH:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;may
+</OL>
+<BR>
+<B>[ <A HREF="#Top">Top of Page</A> ]</B>
+
+
+<H2><A NAME="A3">3. Update links in daily files</A></H2>
+<h4>Update links to &quot;MAIN&quot; in all of May's daily HTML files to point to new &quot;may2000.htm&quot; file (instead of to &quot;index.htm&quot;)</h4>
+<OL>
+
+<LI>Open all files from MAY2000 folder into NoteTab (EXCEPT for newly created &quot;may2000.htm&quot;).
+<br><br>
+<LI>FIND AND REPLACE (in all documents):
+<br><br>
+FIND WHAT:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;../index<BR>
+REPLACE WITH:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;may2000
+<br><br>
+<LI>SAVE ALL under file menu
+</OL>
+<br>
+<B>[ <A HREF="#Top">Top of Page</A> ]</B>
+
+
+<H2><A NAME="A4">4. Create new files and folders for new month</A></H2>
+<H4>Create folders for new month.</H4>
+<OL>
+<LI>Create folder for new month (JUL2000) within the INTLSHIP folder.<SUB>&nbsp;</SUB><BR>
+<LI>Create two new folders, within JUL2000 folder just created, called DOCS and IMAGES.
+</OL>
+<h4>Set up month file for new month.</h4>
+<OL>
+<LI>Make a copy of &quot;jun00.htm&quot; from the JUN2000 folder to the JUL2000 folder.<SUB>&nbsp;</SUB>
+<LI>Re-name copy &quot;jul00.htm&quot;<SUB>&nbsp;</SUB>
+<LI>Delete June content from &quot;jul00.htm&quot;<SUB>&nbsp;</SUB>
+<LI>Delete everything between (but not including) the first<BR>
+&lt;br&gt;
+<BR><BR>
+and
+<BR><BR>
+&lt;center&gt;&lt;p&gt;&lt;a HREF=&quot;../may2000/may00.htm&quot;&gt;Jun | &lt;/a&gt;&lt;a HREF=&quot;../index.htm&quot;&gt;Main Menu&lt;/a&gt; | Jul&lt;/center&gt;<BR><BR>
+<LI>Change links at top and bottom of &quot;jul00.htm&quot; to point to correct month.<SUB>&nbsp;</SUB><BR>
+There should be two sets of the following code in &quot;jul00.htm&quot;:
+<BR><BR>
+<FONT COLOR="#008000"><TT>&lt;center&gt;&lt;p&gt;&lt;a HREF=&quot;../may2000/may00.htm&quot;&gt;Jun | &lt;/a&gt;&lt;a HREF=&quot;../index.htm&quot;&gt;Main Menu&lt;/a&gt; | Jul&lt;/center&gt;</TT></FONT>
+<BR><BR>
+Change the above code (in both places on &quot;jul00.htm&quot;) to read as follows:
+<BR><BR>
+<FONT COLOR="#008000"><TT>&lt;center&gt;&lt;p&gt;&lt;a HREF=&quot;../jun2000/jun00.htm&quot;&gt;Jun | &lt;/a&gt;&lt;a HREF=&quot;../index.htm&quot;&gt;Main Menu&lt;/a&gt; | Aug&lt;/center&gt;</TT></FONT>
+<BR><BR>
+(This will allow users to jump directly from the month of July back to June without having to go back to the &quot;index.htm&quot; page)
+</OL>
+<BR>
+
+<B>[ <A HREF="#Top">Top of Page</A> ]</B>
+
+
+<H2><A NAME="A5">5. Update links in previous month</A></H2>
+<h4>Links in previous month (&quot;jun00.htm&quot;) must be updated to point to new month.</h4>
+<OL>
+<LI>There should be two sets of the following code in &quot;jun00.htm&quot;:
+<br><br>
+<FONT COLOR="#008000"><TT>&lt;center&gt;&lt;p&gt;&lt;a HREF=&quot;../may2000/may00.htm&quot;&gt;Jun | &lt;/a&gt;&lt;a HREF=&quot;../index.htm&quot;&gt;Main Menu&lt;/a&gt; | Jul&lt;/center&gt;</TT></FONT>
+<br><br>
+Change the above code (in both places on &quot;jun00.htm&quot;) to read as follows&quot;
+<br><br>
+<FONT COLOR="#008000"><TT>&lt;center&gt;&lt;p&gt;&lt;a HREF=&quot;../may2000/may00.htm&quot;&gt;Jun | &lt;/a&gt;&lt;a HREF=&quot;../index.htm&quot;&gt;Main Menu&lt;/a&gt; | &lt;a HREF=&quot;../jul2000/jul00.htm&quot;&gt;Jul&lt;/a&gt;&lt;/center&gt;</TT></FONT>
+<br><br>
+(This will allow users to jump directly from the month of June to July without having to go back to the &quot;index.htm&quot; page)
+</OL>
+<br>
+<B>[ <A HREF="#Top">Top of Page</A> ]</B>
+
+
+<H2><A NAME="A6">5. Update main page ("index.htm")</A></H2>
+<h4>Delete archived month (May) from main page and add new month (July)</h4>
+
+<OL>
+<LI>Convert the month of May into the month of July.<br><br>
+
+<OL type=a>
+<LI>Locate the following code:<br><br>
+
+<FONT COLOR="#008000"><tt>&lt;TABLE ALIGN=LEFT BORDER=5 CELLPADDING=5 CELLSPACING=2 WIDTH=400&gt;<br>
+&lt;CAPTION&gt;MAY 2000&lt;/CAPTION&gt;</tt></FONT>
+
+<br><br>
+and convert it to:
+<br><br>
+
+<FONT COLOR="#008000"><tt>&lt;TABLE ALIGN=LEFT BORDER=5 CELLPADDING=5 CELLSPACING=2 WIDTH=400&gt;<br>
+&lt;CAPTION&gt;JULY 2000&lt;/CAPTION&gt;</tt></FONT>
+
+<br><br>
+
+<LI>Change each day of May into the appropriate day of July, row-by-row.<br>
+For example, following is first row of May:<br><br>
+
+<font color=#008000>
+<pre>&lt;TR BGCOLOR="#CCCCCC" ALIGN="center"&gt;
+	&lt;TD height=3D35 BGCOLOR=3D"#F0E68C"&gt;&lt;a href=3D"may2000/may01.htm"&gt;1&lt;/a&gt;&lt;/TD&gt;
+	&lt;TD BGCOLOR=3D"#F0E68C"&gt;&lt;a href=3D"may2000/may02.htm"&gt;2&lt;/a&gt;&lt;/TD&gt;
+	&lt;TD BGCOLOR=3D"#F0E68C"&gt;&lt;a href=3D"may2000/may03.htm"&gt;3&lt;/a&gt;&lt;/TD&gt;
+	&lt;TD BGCOLOR=3D"#F0E68C"&gt;&lt;a href=3D"may2000/may04.htm"&gt;4&lt;/a&gt;&lt;/TD&gt;
+	&lt;TD BGCOLOR=3D"#F0E68C"&gt;&lt;a href=3D"may2000/may05.htm"&gt;5&lt;/a&gt;&lt;/TD&gt;
+	&lt;TD&gt;6&lt;/TD&gt;
+	&lt;TD&gt;7&lt;/TD&gt;
+&lt;/TR&gt;
+</pre>
+</font>
+<br>
+Following is above code converted to first row of July:
+<br><br>
+
+<font color=#008000>
+<pre>&lt;TR BGCOLOR="#CCCCCC" ALIGN="center"&gt;
+	&lt;TD&gt;3&lt;/TD&gt;
+	&lt;TD&gt;4&lt;/TD&gt;
+	&lt;TD&gt;5&lt;/TD&gt;
+	&lt;TD&gt;6&lt;/TD&gt;
+	&lt;TD&gt;7&lt;/TD&gt;
+	&lt;TD&gt;8&lt;/TD&gt;
+	&lt;TD&gt;9&lt;/TD&gt;
+&lt;/TR&gt;
+</pre>
+</font>
+Notice all references to links and colors have been removed within all of the table data (<FONT COLOR="#008000"><tt>&lt;TD&gt;&lt;/TD&gt;</tt></FONT>) code. Background color for each row should remain as <FONT COLOR="#008000"><tt>BGCOLOR="#CCCCCC"</tt></FONT>.
+<br><br>
+Continue the above until each row of May has been converted to respective row of July.
+<br><br>
+<LI>When all of the rows have been converted, locate the following code:<br><br>
+
+<FONT COLOR="#008000"><tt>&lt;BR&gt;&lt;BR&gt;&lt;BR&gt;&lt;BR&gt;&lt;BR&gt;&lt;BR&gt;&lt;BR&gt;<br>
+&lt;CENTER&gt;&lt;P&gt;Or click here to&lt;BR&gt;&lt;A HREF=3D"may2000/may00.htm"&gt;browse entire month of May&lt;/A&gt;&lt;/CENTER&gt;<br>
+&lt;BR CLEAR="left"&gt;</tt></FONT>
+<br><br>
+and convert it to:
+<br><br>
+<FONT COLOR="#008000"><tt>&lt;BR&gt;&lt;BR&gt;&lt;BR&gt;&lt;BR&gt;&lt;BR&gt;&lt;BR&gt;&lt;BR&gt;<br>
+&lt;CENTER&gt;&lt;P&gt;Or click here to&lt;BR&gt;&lt;A HREF="jul2000/jul00.htm"&gt;browse entire month of July&lt;/A&gt;&lt;/CENTER&gt;<br>
+&lt;BR CLEAR="left"&gt;</tt></FONT>
+</OL>
+<br><br>
+<LI>Move the new code for July in front of the code for June (so that, when the browser opens "index.htm", July will be the first month visible.)
+<br><br>
+COPY (or CUT, if your brave) the following:
+<br><br>
+
+<FONT COLOR="#008000"><tt>&lt;TABLE ALIGN=LEFT BORDER=5 CELLPADDING=5 CELLSPACING=2 WIDTH=400&gt;<br>
+&lt;CAPTION&gt;JULY 2000&lt;/CAPTION&gt;</tt></FONT>
+
+<br><br>
+Through:
+<br><br>
+<FONT COLOR="#008000"><tt>&lt;BR&gt;&lt;BR&gt;&lt;BR&gt;&lt;BR&gt;&lt;BR&gt;&lt;BR&gt;&lt;BR&gt;<br>
+&lt;CENTER&gt;&lt;P&gt;Or click here to&lt;BR&gt;&lt;A HREF="jul2000/jul00.htm"&gt;browse entire month of July&lt;/A&gt;&lt;/CENTER&gt;<br>
+&lt;BR CLEAR="left"&gt;</tt></FONT>
+<br><br>
+And then PASTE in front of June:
+<br><br>
+(Locate following code and paste where indicated)
+<br><br>
+
+<FONT COLOR="#008000"><tt>&lt;HR&gt;</tt></FONT>
+<br><br>
+<tt>{paste here}</tt>
+<br><br>
+<FONT COLOR="#008000"><tt>&lt;BR&gt;<br>
+&lt;TABLE ALIGN=LEFT BORDER=5 CELLPADDING=5 CELLSPACING=2 WIDTH=3D400&gt;<br>
+&lt;CAPTION&gt;JUNE 2000&lt;/CAPTION&gt;</tt></FONT>
+<br><br>
+Note: if you used the COPY function (instead of CUT) in the above steps, be sure to go back and DELETE all of July from its original location at the end of June (or else you'll end up with two Julys on the main page.) This won't be necessary if you used the CUT function. 
+
+</OL>
+<br>
+<B>[ <A HREF="#Top">Top of Page</A> ]</B>
+<br>
+<hr>
+<address>
+<small>Last updated: 07/05/00 by Lee Kifer
+</small>
+</address>
+
+
+</BODY>
+</HTML>

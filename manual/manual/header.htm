@@ -1,0 +1,79 @@
+<HTML>
+<HEAD>
+<TITLE>INSTRUCTIONS FOR CREATING HEADER</TITLE>
+</HEAD>
+<BODY BGCOLOR=WHITE>
+<CENTER>
+<IMG SRC="header.gif">
+</CENTER>
+<H1>All invoices begin with the creation of the HEADER</H1>
+<HR>
+<H2>Creating New Invoice</H2>
+<P>The example used for this tutorial will be to create a Commercial Invoice for items shipping against an Oracle order
+to one of our subsidiaries (this is the majority of the type of invoices we create
+and will allow the introduction of the main features of this program). To start a new invoice click on the Create New Invoice icon <IMG SRC="new.gif"ALIGN=TOP> or select FILE|NEW
+from the menu bar. A blank Header window will appear with a new invoice number suggested by the Generator.
+You can use this number or override it with another number, but note that the Generator will not
+allow you to use a number that has already been used.</P>
+<P>Determine if you are preparing a Commercial (CI) or a Pro-Forma (PF) Invoice <IMG SRC="doctype.gif"align=bottom>(in this example, Commercial) then select the country you are
+shipping to from the <A NAME="Cntry">drop-down</A> country list <IMG SRC="cntry.gif"ALIGN=TOP>. (NOTE: Selection of the correct country
+is important for obvious reasons, but also, because of the way the Generator was designed, the country
+selection may also depend on whether you are shipping to one of our subsidiaries or to a distributor. 
+This affects the pricing on the invoice and will be discussed further in the DETAIL section.)</P>
+<P>Order Schedule Number <IMG SRC="custno.gif"align=top> pertains to the site id and two digit suffix for the end-user of the shipment we are preparing.
+This field is most important for intercompany shipments.</P>
+<P><A NAME="Ref">The Reference</A> field <IMG SRC="ref.gif"align=top>, for this example, consists of the Oracle order number.
+This field is what the Generator keys off to collect the order information from Oracle so 
+it is important that it be entered correctly.</P>
+<P>The Customer PO field <IMG SRC="po.gif"align=top> is primarily used when shipping directly to a distributor
+as opposed to an intercompany shipment to one of our subsidiaries. The distributors purchase order number,
+as entered by OA into Oracle, should be placed in this field.</P>
+<P>The requestor field <IMG SRC="requstr.gif"align=top> contains the name of the ultimate end-user (as opposed to the ship-to which would be
+our subsidiary or distributor).</P>
+<P>Enter appropriate persons name in attention-to field <IMG SRC="attn.gif"align=top></P>
+<P>By double clicking directly on the Ship To ID and Bill To ID fields <IMG SRC="shipbill.gif"align=top> you will be
+presented with the various choices for these fields that are currently in the Generator's database. Oracle will also
+automatically insert data into these fields, however, if the appropriate addresses are already set up
+in our database it is preferable to use the ID nos. for these. ID's for all our subsidiaries and most other
+addresses we ship to on a regular basis are already setup in our database.</P>
+<P>We are not currently using the Sold To ID field.</P>
+<P>Choose appropriate account number from the drop-down list or enter one manually. The Account Number
+field and the Transfer Rate field <IMG SRC="accttran.gif"align=top> are linked. For example, if a COGS account
+number is entered (ie. 4801, 4802, etc.) the Transfer Rate field will automatically update to the
+intercompany rate that has been established for that account. If an account number is entered that
+does not have an associated transfer rate then it will default to 1.0. (The Transfer Rate field can be manually overridden, as can most fields in the Generator).</P>
+<P>Exchange rate <IMG SRC="exch.gif"align=top> is directly linked to the country code that was entered
+earlier on the header and is updated automatically. Note that for shipments other than intercompany
+the exchange rate is not necessary and should be deleted from the final invoice (this is done in Word, not
+in the generator).</P>
+<P>"Ship Date" is entered manually (MM/DD/YY). "Entered By" is updated automatically according to
+who logged on to the generator for that particular session (This can be overridden if necessary).</P>
+<P>License <IMG SRC="lic.gif"align=top> can be chosen from the drop-down or entered manually.</P>
+<DL><DT>Of the fields mentioned above, the following <em>must</em> be entered <strong>manually</strong>
+by the user:
+<DD><B>Doc Type, Country, Ref/O.S.#, Attn, Acct#, Ship Date</B> and <B>License</B></DL>
+<DL>
+<DT>The following fields will be filled in automatically by The Generator but may be altered manually:
+<DD><B>Doc/Inv#</B>, <B>Exch Rate</B> and <B>Entered By</B>
+</DL>
+<DL><DT>The following fields may be entered manually or can be updated automatically by <A NAME="Oracle">Oracle</A>
+(<EM>To maintain consistent output for the invoices it may be preferable to enter all of the following
+<strong>manually</strong></EM>):
+<DD><strong>Cust#, Cust PO#, Requestor, Ship To ID#</strong> and <strong>Bill To ID#</strong>
+</DL>
+<P>The remainder of the Header screen contains the shipping information and is manually entered. These fields
+are self explanatory and should be filled as the flight information becomes available.</P>
+<P>Be sure to save the Header either by clicking the save icon <IMG SRC="save.gif"align=top> or by selecting
+FILE|SAVE from the menu bar (the Generator will not operate properly if the Header screen is not saved before continuing
+with the remainder of the invoice).</P>
+<P>Please proceed to the <A HREF="detail.htm">DETAIL</A> instructions.</P>
+<P><CENTER>( <A HREF="home.htm">HOME</A> | <A HREF="header.htm">HEADER</A> | <A HREF="detail.htm">DETAIL</A> | <A HREF="footer.htm">FOOTER</A> | <A HREF="print.htm">PRINT</A> ).
+</CENTER>
+</P>
+<HR>
+<address>
+Last Updated: 2/14/98 by Lee Kifer
+</address>
+</BODY>
+</HTML>
+
